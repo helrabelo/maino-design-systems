@@ -41,19 +41,11 @@ module.exports = withPlugins([
         return {
           ...defaultPathMap,
           '/': { page: '/' },
-          '/emprestimos': { page: '/loans' },
-          '/emprestimos/novoemprestimo': {
-            page: '/loans/newloan',
-          },
-          '/emprestimos/portabilidade': {
-            page: '/loans/portability',
-          },
-          '/emprestimos/refin': {
-            page: '/loans/refin',
-          },
-          '/sobre': { page: '/about' },
         };
       },
     },
   ],
+  [{
+    target: "serverless",
+  }]
 ]);
